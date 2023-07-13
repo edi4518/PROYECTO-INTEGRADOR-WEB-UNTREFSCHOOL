@@ -7,7 +7,6 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header--h1">Instituto UNTREF</h1>
       <nav class="header__nav">
         <ul class="header__nav__ul">
           <li class="nav__ul--items">
@@ -27,25 +26,64 @@
           </li>
         </ul>
       </nav>
+      <h1 class="header--h1">Instituto UNTREF</h1>
     </header>
     <main class="main">
       <section class="main__section main__section-1">
         <h2 class="section--h2">Quienes Somos</h2>
+        <figure>
+          <img src="" alt="" class="section--img" />
+          <figcaption></figcaption>
+        </figure>
+        <p class="section--p"></p>
       </section>
       <section class="main__section main__section-2">
         <h2 class="section--h2">¿Por que elegirnos?</h2>
+        <article class="section--article"></article>
       </section>
       <section class="main__section main__section-3">
         <h2 class="section--h2">Propuesta Educativa</h2>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </section>
       <section class="main__section main__section-4">
         <h2 class="section--h2">Ultimas Noticias</h2>
+        <div class="section__container section__container-news1">
+          <h3 class="section--h3"></h3>
+          <p class="section--p"></p>
+        </div>
+        <div class="section__container section__container-news2">
+          <h3 class="section--h3"></h3>
+          <p class="section--p"></p>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="footer__container footer__container--social"></div>
-      <div class="footer__container footer__container--map"></div>
-      <div class="footer__container footer__container--contact"></div>
+      <div class="footer__container footer__container--social">
+        <h3 class="footer--h3"></h3>
+        <p class="footer--p footer-p1"></p>
+        <p class="footer--p footer-p2"></p>
+        <p class="footer--p footer-p3"></p>
+      </div>
+      <div class="footer__container footer__container--map">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+      <div class="footer__container footer__container--contact">
+        <form action="" method="post">
+          <label for="nombre"
+            >Nombre <input type="text" name="nombre" id="nombre"
+          /></label>
+          <label for="correo"
+            >Email <input type="text" name="correo" id="correo"
+          /></label>
+          <label for="telefono">
+            Telefono<input type="tel" name="telefono" id="telefono"
+          /></label>
+          <button class="btn">Enviar</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
