@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
 /* Paleta de colores
 #FC7300 , #1F8A70 , #00425A , #181823, 
 #EFF5F5 */
@@ -7,4 +13,61 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+header {
+  width: 100%;
+  height: 50vh;
+  background-color: lightpink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--h1 {
+  width: 100%;
+  background-image: url(../img/portada_aula.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.header h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  margin-top: 85px;
+}
+
+.header__nav {
+  display: block;
+  width: 100%;
+  background-color: #181823;
+}
+
+nav a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #eff5f5;
+}
+
+.header__nav__ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 8px;
+}
+.nav__ul--items {
+  list-style: none;
+  border-radius: 20px;
+  background-color: #181823;
+  padding: 5px 10px;
+}
+
+.nav__ul--items:hover {
+  background-color: #1f8a70;
 }
