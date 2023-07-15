@@ -8,7 +8,7 @@
 #FC7300 , #1F8A70 , #00425A , #181823, 
 #EFF5F5 */
 
-/* Edicion de normalizacion */
+/* Normalize */
 
 * {
   margin: 0;
@@ -17,7 +17,13 @@
 
 body {
   min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  
 }
+
+/* Edicion general de la cabecera */
+
 header {
   width: 100%;
   height: 50vh;
@@ -27,6 +33,8 @@ header {
   align-items: center;
 }
 
+/* Edicion del div del h1 */
+
 .container--h1 {
   width: 100%;
   background-image: url(../img/portada_aula.jpg);
@@ -34,40 +42,128 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  
 }
+
+/* Edicion del Titutlo h1 */
+
 .header h1 {
+  background-color: #18182392;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2rem;
   font-family: "Poppins", sans-serif;
   display: block;
   margin-top: 85px;
+  color: #EFF5F5;
 }
+
+/* Edicion gral del nav */
 
 .header__nav {
-  display: block;
+  display: inline-block;
   width: 100%;
   background-color: #181823;
+
 }
 
+/* Editando los enlaces de la barra de navegacion */
+
 nav a {
-  font-size: 14px;
+  
+  width: 100%;
+  display: inline-block;
+  font-size: 0.7rem;
   text-decoration: none;
   font-weight: 600;
+  text-align: center;
   color: #eff5f5;
 }
+
+/* Edicion de la lista del nav */
 
 .header__nav__ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
   padding: 10px 8px;
 }
+
+/* Editando cada item de la lista del nav */
+
 .nav__ul--items {
   list-style: none;
   border-radius: 20px;
   background-color: #181823;
-  padding: 5px 10px;
+  padding: 5px 6px;
+ 
 }
+
+/* Agregandole accion cuando se pasa el cursor por encima l los items del nav */
 
 .nav__ul--items:hover {
   background-color: #1f8a70;
+  text-decoration: underline;
+  transform: scale(1.5);
+  transition: transform .5s;
+  cursor: pointer;
+}
+
+/* Editando las acciones cuando se clickea sobre los items */
+.nav__ul--items:active {
+  background-color: #00425A;
+  text-decoration: underline;
+  text-decoration-color: #00425A;
+  cursor: pointer;
+  
+}
+
+/* Edicion general de la etiqueta main */
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 30vh);
+  gap: 1em;
+}
+
+/* Edicion general de cada seccion del main */
+
+.main__section{
+  border: 2px solid black;
+  width: 100%;
+  height: 30vh;
+  background-color: chocolate;
+  margin: 10px 0;
+  text-indent: .5rem;
+}
+
+/* Editando la seccion "quienes somos" del main */
+.main__section-1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 1fr;
+}
+
+.container--h2{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: aliceblue;
+}
+.section__figure{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 100%;
+  background-color: #1f8a70;
+}
+
+.section--p{
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  display: inline-block;
+  border: 1px solid red;
+}
+.section--h2{
+  padding: 10px 0;
 }
