@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* font-family: 'Poppins', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap");
 /* font-family: 'Belanosima', sans-serif; */
 /* Paleta de colores
 #FC7300 , #1F8A70 , #00425A , #181823, 
@@ -19,7 +19,6 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   /* font-family: 'Belanosima', sans-serif; */
-  
 }
 
 /* Edicion general de la cabecera */
@@ -42,7 +41,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  
 }
 
 /* Edicion del Titutlo h1 */
@@ -54,8 +52,8 @@ header {
   font-family: "Poppins", sans-serif;
   display: block;
   margin-top: 85px;
-  color: #EFF5F5;
-  font-family: 'Poppins', sans-serif;
+  color: #eff5f5;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Edicion gral del nav */
@@ -64,13 +62,11 @@ header {
   display: inline-block;
   width: 100%;
   background-color: #181823;
-
 }
 
 /* Editando los enlaces de la barra de navegacion */
 
 nav a {
-  
   width: 100%;
   display: inline-block;
   font-size: 0.7rem;
@@ -97,7 +93,6 @@ nav a {
   border-radius: 20px;
   background-color: #181823;
   padding: 5px 6px;
- 
 }
 
 /* Agregandole accion cuando se pasa el cursor por encima l los items del nav */
@@ -106,51 +101,51 @@ nav a {
   background-color: #1f8a70;
   text-decoration: underline;
   transform: scale(1.5);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
 }
 
 /* Editando las acciones cuando se clickea sobre los items */
 .nav__ul--items:active {
-  background-color: #00425A;
+  background-color: #00425a;
   text-decoration: underline;
-  text-decoration-color: #00425A;
+  text-decoration-color: #00425a;
   cursor: pointer;
-  
 }
 
 /* Edicion general de la etiqueta main */
 
-.main{
+.main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 30vh);
- 
 }
 
 /* Edicion general de cada seccion del main */
 
-.main__section{
+.main__section {
   border-top: 4px solid #181823;
   width: 100%;
   height: 30vh;
-  text-indent: .5rem;
+  text-indent: 0.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 25% 1fr 20%;
-  font-family: 'Belanosima', sans-serif;
+  font-family: "Belanosima", sans-serif;
 }
 /* Editando el contenido de la seccion "Quienes Somos" */
 
 /* Edicion del titulo de la seccion quienes somos */
-.section--h2{
+.section--h2 {
   grid-column: 1/3;
   grid-row: 1/2;
   margin: auto 0;
-  font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
 }
-.volver--link{
+/* Acomodando el enlace de la primera seccion que lleva al inicio de la pagina */
+
+.volver--link {
   grid-column: 2/3;
   grid-row: 3/4;
   text-align: center;
@@ -158,21 +153,21 @@ nav a {
   font-size: 15px;
   cursor: pointer;
   margin-top: 5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: "Belanosima", sans-serif;
   font-weight: 600;
-  
 }
-.volver{
+
+/* Editando el span que se encuentra dentro del enlace de la primera seccion  */
+
+.volver {
   color: #181823;
-  border: 2px dashed #00425A;
+  border: 2px dashed #00425a;
   border-radius: 7px;
-  background-color: #FC7300;
+  background-color: #fc7300;
   padding: 2px;
-  
-  
 }
 /* Edicion de la imagen de la seccion quienes somos */
-.section--img{
+.section--img {
   grid-column: 1/2;
   grid-row: 2/4;
   height: 90%;
@@ -182,10 +177,10 @@ nav a {
   object-fit: cover;
   overflow: hidden;
   border: 2px solid black;
- }
+}
 
- /* Edicion del parrafo de la seccion quienes somos */
-.section--p{
+/* Edicion del parrafo de la seccion quienes somos */
+.section--p {
   grid-column: 2/3;
   grid-row: 2/3;
   font-size: 1rem;
@@ -197,35 +192,163 @@ nav a {
   color: #181823;
 }
 
-
-
 /* Comenzando a editar la seccion "Por que elegirnos" */
 
-.main__section-2{
+/* Editando contenedor de la seccion por que elegirnos */
+.main__section-2 {
   background-color: #181823;
-  color: #EFF5F5;
+  color: #eff5f5;
 }
-.section--article{
+
+/* Editando los estilos del article de la seccion */
+
+.section--article {
   grid-column: 1/2;
   grid-row: 2/3;
   height: 100%;
   width: 100%;
   padding: 2px;
   margin-bottom: 2px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
   overflow: hidden;
 }
-.section2--img{
+
+/* Editando la imagen de la seccion Por que elegirnos */
+
+.section2--img {
   grid-column: 2/3;
   grid-row: 2/4;
-
 }
 
-.link2{
+/* Acomodando el enlace de la segunda seccion que lleva al inicio de la pagina */
+.link2 {
   grid-column: 1/2;
   grid-row: 3/4;
   margin-top: 6px;
-  
 }
 
+/* Comenzando a modificar los estilos de la seccion Propuesta Educativa */
+
+/* Acomodando el enlace de la segunda seccion que lleva al inicio de la pagina */
+
+.link3 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.main__section3__container--img {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  max-height: 100%;
+}
+
+/* Editando el contenedor con las imagenes de la seccion de propuesta educativa */
+.main__section3--img {
+  object-fit: cover;
+  width: 4.5em;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 4.5em;
+
+}
+
+/* Edicion imagen 1 */
+.img1{
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+}
+/* Edicion imagen 2 */
+.img2{
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+/* Edicion imagen 3 */
+.img3{
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+/* Edicion imagen 4 */
+
+.img4{
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+/* Editando la accion de las imagenes cuando se pasa el cursor por encima */
+.main__section3--img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.6s;
+}
+
+/* Comenzando a modificar la ultima seccion del main (ultimas noticias) */
+
+.main__section-4 {
+  height: 45vh;
+  width: 100%;
+  background-color: #181823;
+  color: #eff5f5;
+}
+
+.link4 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+/* Edicion general del contenedor de la seccion Ultimas noticias */
+
+.section__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Edicion de lla ubicacion del contenedor de la 1er noticia */
+
+.section__container-news1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/* Edicion del titulo de las secciones */
+
+.section--h3 {
+  font-size: 13px;
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+/* Edicion del parrafo de la seccion Ultimas noticias */
+
+.section4--p {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  font-size: .7em;
+  font-weight: 300;
+  text-align: justify;
+  color: #eff5f5;
+  overflow: hidden;
+
+}
+
+/* Edicion de la 2 noticia de la seccion Ultimas noticias */
+
+.section__container-news2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
