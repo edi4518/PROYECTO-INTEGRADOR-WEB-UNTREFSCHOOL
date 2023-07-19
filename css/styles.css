@@ -14,7 +14,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
 body {
   min-height: 100vh;
   max-width: 100vw;
@@ -26,7 +30,6 @@ body {
 header {
   width: 100%;
   height: 50vh;
-  background-color: lightpink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +40,7 @@ header {
 .container--h1 {
   width: 100%;
   background-image: url(../img/portada_aula.jpg);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -48,8 +51,8 @@ header {
 .header h1 {
   background-color: #18182392;
   text-align: center;
+
   font-size: 2rem;
-  font-family: "Poppins", sans-serif;
   display: block;
   margin-top: 85px;
   color: #eff5f5;
@@ -103,6 +106,7 @@ nav a {
   transform: scale(1.5);
   transition: transform 0.5s;
   cursor: pointer;
+  box-shadow: 2px 2px 8px -1px #eff5f57b;
 }
 
 /* Editando las acciones cuando se clickea sobre los items */
@@ -141,7 +145,6 @@ nav a {
   grid-row: 1/2;
   margin: auto 0;
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
 }
 /* Acomodando el enlace de la primera seccion que lleva al inicio de la pagina */
 
@@ -183,10 +186,10 @@ nav a {
 .section--p {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   margin: auto 3px;
-  padding: 5px;
+  /* padding: 5px; */
   overflow: hidden;
   height: 85%;
   color: #181823;
@@ -333,11 +336,14 @@ nav a {
 /* Edicion del parrafo de la seccion Ultimas noticias */
 
 .section4--p {
+  display: inherit;
+  align-items: center;
+  text-align: left;
   grid-column: 1/3;
   grid-row: 2/3;
   font-size: 10px;
   font-weight: 300;
-
+  padding: 0 5px;
   color: #eff5f5;
   overflow: hidden;
 }
@@ -374,7 +380,7 @@ footer {
   grid-column: 1/3;
   grid-row: 1/2;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 /* Imagenes */
@@ -401,8 +407,10 @@ footer {
 
 /* Texto de la cada red social */
 
-.footer--p {
+.footer--p,
+.contact--links {
   font-size: 0.7em;
+  font-family: "Belanosima", sans-serif;
 }
 .redes--link {
   cursor: pointer;
@@ -438,13 +446,14 @@ footer {
 .map--h3 {
   grid-column: 3/5;
   grid-row: 1/2;
+  font-size: 0.7rem;
 }
 
 .map--img {
   grid-column: 3/5;
   grid-row: 2/5;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -453,6 +462,7 @@ footer {
 .contact--h3 {
   grid-column: 5/7;
   grid-row: 1/2;
+  font-size: 0.7rem;
 }
 
 /* Imagenes */
@@ -500,3 +510,148 @@ footer {
   grid-column: 6/7;
   grid-row: 4/5;
 }
+
+/* Edicion de la parte responsive para medidas mayores 425px */
+
+@media screen and (min-width: 425px) {
+  /* Modificando el header */
+  header {
+    height: 50vh;
+  }
+
+  /* Editando el nav del header */
+  .header__nav {
+    height: 15vh;
+  }
+
+  /* Editando los items del nav */
+  .nav__ul--items {
+    padding: 6px 4px;
+  }
+  /* Editando la lista ul */
+  .header__nav__ul {
+    padding: 4px;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  /* Editando las acciones de los items cuando se pasa el cursor por encima */
+
+  .nav__ul--items:hover {
+    background-color: #1f8a70;
+    box-shadow: 2px 2px 8px -1px #eff5f57b;
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+
+  /* Editando los enlaces */
+
+  .nav__items--a {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /* Modificando el main de la pagina */
+
+  .main {
+    grid-template-rows: repeat(4, 50vh);
+  }
+
+  /* Editando seccion 1 quienes somos */
+
+  .main__section {
+    height: 100%;
+  }
+
+  .main__section-1 {
+    align-content: center;
+  }
+
+  /* Editando titulos del main */
+
+  .section--h2 {
+    text-indent: 1rem;
+  }
+
+  /* Editando los parragos de la seccion quienes somos y por que elegirnos */
+
+  .section--p,
+  .section--article {
+    font-size: 1.2rem;
+  }
+
+  /* Editando los enlaces de volver */
+
+  .volver--link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    padding: 4px 3px;
+  }
+
+  .volver {
+    padding: 4px 6px;
+    /* z-index: 100; */
+  }
+
+  /* Editando la seccion propuesta educativa */
+
+  .main__section3--img {
+    height: 5.5em;
+    width: 5.5em;
+  }
+
+  /* Editando la seccion 4 de ultimas noticias */
+
+  .section--h3 {
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: bold;
+  }
+  .section4--p {
+    display: inherit;
+    align-items: center;
+    text-align: left;
+    text-indent: initial;
+    padding: 0 5px;
+    font-size: 0.9rem;
+  }
+  /* .volver4 {
+    margin-top: 10px;
+  } */
+
+  .section__container-news2:hover,
+  .section__container-news1:hover {
+    width: 90%;
+    height: 85%;
+    border: 2px dashed #eff5f575;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #eff5f586;
+  }
+
+  /* Modificando footer de la pagina */
+
+  footer {
+    grid-template-columns: 12% 22% 1fr 0.5fr 12% 32%;
+  }
+  .footer--p,
+  .contact--links {
+    font-size: 1rem;
+    font-family: "Belanosima", sans-serif;
+  }
+
+  .redes--img,
+  .contact--img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .map--img {
+    height: 80%;
+    width: 100%;
+  }
+}
+
+/* Modificando los media queries para dispositivos mayores a 768px */
