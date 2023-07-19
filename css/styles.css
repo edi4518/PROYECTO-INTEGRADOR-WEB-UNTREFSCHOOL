@@ -195,6 +195,10 @@ nav a {
   color: #181823;
 }
 
+.hide--less768{
+  display: none;
+}
+
 /* Comenzando a editar la seccion "Por que elegirnos" */
 
 /* Editando contenedor de la seccion por que elegirnos */
@@ -264,7 +268,9 @@ nav a {
   border-radius: 50%;
   height: 4.5em;
 }
-
+.capa--transparente{
+  display: none;
+}
 /* Edicion imagen 1 */
 .img1 {
   grid-column: 1/2;
@@ -655,3 +661,227 @@ footer {
 }
 
 /* Modificando los media queries para dispositivos mayores a 768px */
+
+@media screen and (min-width: 768px) {
+  /* Edicion de estilos del header */
+
+  header {
+    height: 75vh;
+  }
+
+  /* Edicion de la barra de navegacion del header */
+
+  .header__nav__ul {
+    background-color: #00425a;
+    justify-content: space-evenly;
+  }
+
+  /* Edicion de los li del nav */
+
+  .nav__ul--items {
+    background-color: #00425a;
+  }
+
+  /* Edicion de los enlaces del nav */
+
+  .nav__items--a {
+    font-size: 1.3rem;
+  }
+
+  /* Edicion del contenedor del h1 del header */
+
+  .container--h1 {
+    padding: 25px 0;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 95%;
+  }
+
+  .nav__ul--items:hover {
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px -2px #eff5f595;
+  }
+
+  /* Modidicando los estilos del main de la pagina */
+
+  /* Edicion main general */
+  
+  .main {
+    grid-template-rows: repeat(4, 80vh);
+    width: 95%;
+    margin: auto;
+  }
+
+  /* Edicion de las secciones del main */
+
+  .main__section {
+    border: none;
+  }
+
+  /* Edicion de la primera seccion */
+  
+  .main__section-1 {
+    color: #eff5f5;
+    background-color: #181823;
+  }
+
+  /* Edicion de los titulos de la seccion main */
+  
+  .section--h2 {
+    font-size: 2rem;
+    text-indent: 1.6rem;
+    text-align: center ;
+  }
+
+  /* Edicion del parrafo de la seccion quienes somos */
+  
+  .section--p {
+    font-size: 1.4rem;
+    color: #eff5f5;
+    line-height: 2rem;
+  }
+
+  /* Agregando parrafo oculto en la seccion quienes somos */
+
+  .hide--less768{
+    display: block;
+    padding: 25px 0;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  /* Editando el boton de volver al inicio */
+
+  .volver {
+    background-color: #eff5f5;
+    color: #181823;
+    text-align: center;
+    box-shadow: 2px 6px 10px 2px #eff5f5b3;
+  }
+
+  /* Editando las acciones del boton de volver arriba */
+
+  .volver--link:hover{
+    transform: scale(1.2);
+    transition: all .4s;
+  }
+
+  .volver:active{
+    box-shadow: none;
+    transition: all .2s;
+  }
+
+  /* Modificando la seccion  Por que elegirnos */
+
+  .main__section-2{
+    background-color: #eff5f5;
+    color: #181823;
+  }
+
+  /* Editando el parrafo de por que elegirnos */
+
+  .section--article{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 15px 3px;
+  }
+
+    /* Editando las acciones del boton de volver arriba */
+
+    .main__section-2 span:first-child {
+      background-color: #181823;
+      color: #eff5f5;
+      text-align: center;
+      box-shadow: 2px 6px 10px 2px #181823b9;
+    }
+
+    .link2:hover{
+      transform: scale(1.2);
+      transition: all .4s;
+    }
+  
+    .main__section-2 span:first-child:active{
+      box-shadow: none;
+      transition: all .2s;
+    }
+
+    /* Modificando seccion 3 Propuesta educativa */
+
+    .main__section-3{
+      text-align: center;
+      color: #eff5f5;
+      background: linear-gradient(#181823be, #181823be), url(../img/deportes.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #181823;
+    }
+    .main__section3--img {
+      height: 7.5em;
+      width: 7.5em;
+      
+    }
+
+  
+
+    /* Modificando la seccion de ultimas noticias */
+
+    .main__section-4{
+      background-color: #eff5f5;
+      color: #181823;
+    }
+
+    .section__container-news1{
+      background-image :url(../img/pizarron.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+    }
+
+    
+    .section__container-news2{
+      background-image :url(../img/pizarron.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+    }
+
+    .section--h3{
+      color: #eff5f5;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .section4--p{
+      text-align: center;
+      font-size: .8rem;
+
+    }
+
+    
+    .main__section-4 .volver4 {
+      background-color: #181823;
+      color: #eff5f5;
+      text-align: center;
+      box-shadow: 2px 6px 10px 2px #181823b9;
+      
+    }
+
+    .link4{
+      margin-top: 15px;
+    }
+
+    /* .link4:hover{
+      transform: scale(1.2);
+      transition: all .4s;
+    } */
+  
+    /* .main__section-4 span:first-child:active{
+      box-shadow: none;
+      transition: all .2s;
+    } */
+
+  }
