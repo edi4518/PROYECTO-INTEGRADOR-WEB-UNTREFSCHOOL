@@ -195,7 +195,7 @@ nav a {
   color: #181823;
 }
 
-.hide--less768{
+.hide--less768 {
   display: none;
 }
 
@@ -268,7 +268,7 @@ nav a {
   border-radius: 50%;
   height: 4.5em;
 }
-.capa--transparente{
+.capa--transparente {
   display: none;
 }
 /* Edicion imagen 1 */
@@ -313,7 +313,10 @@ nav a {
   grid-column: 1/3;
   grid-row: 3/4;
 }
-
+#volver4 {
+  background-color: #fc7300;
+  color: #181823;
+}
 /* Edicion general del contenedor de la seccion Ultimas noticias */
 
 .section__container {
@@ -455,9 +458,13 @@ footer {
   font-size: 0.7rem;
 }
 
-.map--img {
+.map--link {
   grid-column: 3/5;
   grid-row: 2/5;
+  width: 100%;
+  height: 80%;
+}
+.map--img {
   width: 100%;
   height: 80%;
   object-fit: cover;
@@ -530,6 +537,13 @@ footer {
     height: 15vh;
   }
 
+  #header--h1 {
+    margin-top: 87px;
+    font-size: 2.4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   /* Editando los items del nav */
   .nav__ul--items {
     padding: 6px 4px;
@@ -538,7 +552,7 @@ footer {
   .header__nav__ul {
     padding: 4px;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   /* Editando las acciones de los items cuando se pasa el cursor por encima */
@@ -586,6 +600,7 @@ footer {
   .section--p,
   .section--article {
     font-size: 1.2rem;
+    padding-top: 50px;
   }
 
   /* Editando los enlaces de volver */
@@ -611,30 +626,54 @@ footer {
 
   /* Editando la seccion 4 de ultimas noticias */
 
+  .main__section-4 {
+    place-items: center;
+  }
   .section--h3 {
-    font-size: 0.9rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
     font-weight: bold;
   }
   .section4--p {
     display: inherit;
     align-items: center;
-    text-align: left;
+    text-align: center;
+    line-height: 1.6rem;
     text-indent: initial;
     padding: 0 5px;
     font-size: 0.9rem;
   }
-  /* .volver4 {
-    margin-top: 10px;
-  } */
 
-  .section__container-news2:hover,
-  .section__container-news1:hover {
+  .section--h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .volver4 {
+    margin-top: 10px;
+    background-color: #fc7300;
+    color: #181823;
+  }
+
+  .section__container-news1,
+  .section__container-news2 {
+    margin-left: 5px;
+    height: 90%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: #00425a49;
     width: 90%;
-    height: 85%;
-    border: 2px dashed #eff5f575;
-    border-radius: 4px;
-    box-shadow: 5px 5px 8px #eff5f586;
+    border: 2px solid #eff5f5;
+    box-shadow: 4px 4px 9px #eff5f563;
+  }
+
+  .section--h3 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    padding: 10px 0;
+  }
+
+  .link4 {
+    padding: 20px 2px;
   }
 
   /* Modificando footer de la pagina */
@@ -654,9 +693,16 @@ footer {
     height: 30px;
   }
 
-  .map--img {
-    height: 80%;
+  .map--link {
+    grid-column: 3/5;
+    grid-row: 2/5;
     width: 100%;
+    height: 100%;
+  }
+  .map--img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
   }
 }
 
@@ -696,8 +742,12 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 95%;
+    align-items: center;
   }
 
+  #header--h1 {
+    margin-top: 200px;
+  }
   .nav__ul--items:hover {
     border-radius: 4px;
     box-shadow: 3px 3px 4px -2px #eff5f595;
@@ -706,7 +756,7 @@ footer {
   /* Modidicando los estilos del main de la pagina */
 
   /* Edicion main general */
-  
+
   .main {
     grid-template-rows: repeat(4, 80vh);
     width: 95%;
@@ -720,22 +770,22 @@ footer {
   }
 
   /* Edicion de la primera seccion */
-  
+
   .main__section-1 {
     color: #eff5f5;
     background-color: #181823;
   }
 
   /* Edicion de los titulos de la seccion main */
-  
+
   .section--h2 {
     font-size: 2rem;
     text-indent: 1.6rem;
-    text-align: center ;
+    text-align: center;
   }
 
   /* Edicion del parrafo de la seccion quienes somos */
-  
+
   .section--p {
     font-size: 1.4rem;
     color: #eff5f5;
@@ -744,7 +794,7 @@ footer {
 
   /* Agregando parrafo oculto en la seccion quienes somos */
 
-  .hide--less768{
+  .hide--less768 {
     display: block;
     padding: 25px 0;
     line-height: 2rem;
@@ -762,126 +812,235 @@ footer {
 
   /* Editando las acciones del boton de volver arriba */
 
-  .volver--link:hover{
+  .volver--link:hover {
     transform: scale(1.2);
-    transition: all .4s;
+    transition: all 0.4s;
   }
 
-  .volver:active{
+  .volver:active {
     box-shadow: none;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   /* Modificando la seccion  Por que elegirnos */
 
-  .main__section-2{
+  .main__section-2 {
     background-color: #eff5f5;
     color: #181823;
   }
 
   /* Editando el parrafo de por que elegirnos */
 
-  .section--article{
+  .section--article {
     font-size: 1.3rem;
     line-height: 2rem;
     padding: 15px 3px;
   }
 
-    /* Editando las acciones del boton de volver arriba */
+  /* Editando las acciones del boton de volver arriba */
 
-    .main__section-2 span:first-child {
-      background-color: #181823;
-      color: #eff5f5;
-      text-align: center;
-      box-shadow: 2px 6px 10px 2px #181823b9;
-    }
-
-    .link2:hover{
-      transform: scale(1.2);
-      transition: all .4s;
-    }
-  
-    .main__section-2 span:first-child:active{
-      box-shadow: none;
-      transition: all .2s;
-    }
-
-    /* Modificando seccion 3 Propuesta educativa */
-
-    .main__section-3{
-      text-align: center;
-      color: #eff5f5;
-      background: linear-gradient(#181823be, #181823be), url(../img/deportes.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-color: #181823;
-    }
-    .main__section3--img {
-      height: 7.5em;
-      width: 7.5em;
-      
-    }
-
-  
-
-    /* Modificando la seccion de ultimas noticias */
-
-    .main__section-4{
-      background-color: #eff5f5;
-      color: #181823;
-    }
-
-    .section__container-news1{
-      background-image :url(../img/pizarron.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      
-    }
-
-    
-    .section__container-news2{
-      background-image :url(../img/pizarron.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      
-    }
-
-    .section--h3{
-      color: #eff5f5;
-      text-align: center;
-      font-size: 1.2rem;
-    }
-
-    .section4--p{
-      text-align: center;
-      font-size: .8rem;
-
-    }
-
-    
-    .main__section-4 .volver4 {
-      background-color: #181823;
-      color: #eff5f5;
-      text-align: center;
-      box-shadow: 2px 6px 10px 2px #181823b9;
-      
-    }
-
-    .link4{
-      margin-top: 15px;
-    }
-
-    /* .link4:hover{
-      transform: scale(1.2);
-      transition: all .4s;
-    } */
-  
-    /* .main__section-4 span:first-child:active{
-      box-shadow: none;
-      transition: all .2s;
-    } */
-
+  .main__section-2 span:first-child {
+    background-color: #181823;
+    color: #eff5f5;
+    text-align: center;
+    box-shadow: 2px 6px 10px 2px #181823b9;
   }
+
+  .link2:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
+  }
+
+  .main__section-2 span:first-child:active {
+    box-shadow: none;
+    transition: all 0.2s;
+  }
+
+  /* Modificando seccion 3 Propuesta educativa */
+
+  .main__section-3 {
+    text-align: center;
+    color: #eff5f5;
+    background: linear-gradient(#181823be, #181823be), url(../img/deportes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #181823;
+  }
+  .main__section3--img {
+    height: 7.5em;
+    width: 7.5em;
+  }
+
+  /* Modificando la seccion de ultimas noticias */
+
+  /* Contenedor principal */
+
+  .main__section-4 {
+    background-color: #eff5f5;
+    color: #181823;
+    place-items: center;
+  }
+
+  .section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* Edicion del span para mostrarlo */
+
+  .section__container span {
+    display: inline-block;
+    padding: 0;
+  }
+
+  /* Edicion del 1era noticia */
+
+  .section__container-news1 {
+    color: #181823;
+    background-color: #eff5f5;
+  }
+
+  /* Edicion de la 2da noticia */
+
+  .section__container-news2 {
+    background-color: #eff5f5;
+  }
+
+  /* Edicion del titulo de cada noticia */
+
+  .section--h3 {
+    color: #181823;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  /* Edicion del parrafo */
+
+  .section4--p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #181823;
+    margin: 4px;
+    display: inherit;
+    padding: 0 5px;
+    overflow: hidden;
+    height: 50%;
+  }
+
+  .section__container-news1,
+  .section__container-news2 {
+    margin-left: 5px;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #1f8a6f68;
+    width: 90%;
+    border: 2px solid #181823;
+    box-shadow: 4px 4px 9px 4px #18182370;
+  }
+
+  .main__section-4 .volver4 {
+    background-color: #181823;
+    color: #eff5f5;
+    text-align: center;
+    box-shadow: 2px 6px 10px 2px #181823b9;
+  }
+
+  .link4 {
+    margin-top: 15px;
+  }
+
+  /* Modificando el footer */
+
+  /* Editando estilos generales del footer */
+
+  footer {
+    background-color: #00425a;
+    font-family: inherit;
+  }
+
+  .redes--img,
+  .contact--img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer--p,
+  .contact--links {
+    font-size: 1.5rem;
+  }
+
+  .map--link {
+    grid-column: 3/5;
+    grid-row: 2/5;
+    width: 80%;
+    height: 80%;
+  }
+  .map--img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Edicion de la barra de navegacion */
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+  }
+
+  /* Edicion de la liata dentro del nav */
+
+  .header__nav__ul {
+    background-color: #181823;
+  }
+
+  .nav__ul--items {
+    background-color: #181823;
+  }
+
+  /* Edicion de estilos cuando se pasa el mouse por encima */
+
+  .nav__ul--items:hover {
+    background-color: #00425a;
+    border-radius: 10px;
+  }
+
+  .nav__ul--items:active {
+    background-color: #00425a83;
+    box-shadow: 2px 2px 5px 2px #eff5f5;
+  }
+  #header--h1 {
+    margin-top: 180px;
+    padding: 20px 0;
+    font-size: 3rem;
+    font-weight: 800;
+    background-color: #00425a72;
+    color: #181823;
+    text-shadow: #eff5f5 2px 2px 15px;
+  }
+
+  .section--h2 {
+    text-shadow: #181823 2px 2px 15px;
+  }
+
+  .section__h2--1024 {
+    text-shadow: #eff5f5 2px 2px 15px;
+  }
+
+  .map--link {
+    grid-column: 3/5;
+    grid-row: 2/5;
+    width: 80%;
+    height: 90%;
+  }
+  .map--img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
