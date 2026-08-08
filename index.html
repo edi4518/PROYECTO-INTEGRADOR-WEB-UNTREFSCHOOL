@@ -15,28 +15,30 @@
     <!-- Header y Navegación Principal -->
     <header class="header" id="header">
       <nav class="header__nav" id="nav--menu" aria-label="Navegación principal">
-        <ul class="header__nav__ul">
-          <li class="nav__ul--items">
-            <a href="#nosotros" class="nav__items--a">Nosotros</a>
-          </li>
-          <li class="nav__ul--items">
-            <a href="#elegirnos" class="nav__items--a">¿Por qué elegirnos?</a>
-          </li>
-          <li class="nav__ul--items">
-            <a href="#propuesta" class="nav__items--a">Propuesta Educativa</a>
-          </li>
-          <li class="nav__ul--items">
-            <a href="#noticias" class="nav__items--a">Últimas Noticias</a>
-          </li>
-          <li class="nav__ul--items">
-            <a href="contacto.html" class="nav__items--a">Contáctanos</a>
-          </li>
-        </ul>
+        <div class="container-seccion">
+          <ul class="header__nav__ul">
+            <li class="nav__ul--items">
+              <a href="#nosotros" class="nav__items--a">Nosotros</a>
+            </li>
+            <li class="nav__ul--items">
+              <a href="#elegirnos" class="nav__items--a">¿Por qué elegirnos?</a>
+            </li>
+            <li class="nav__ul--items">
+              <a href="#propuesta" class="nav__items--a">Propuesta Educativa</a>
+            </li>
+            <li class="nav__ul--items">
+              <a href="#noticias" class="nav__items--a">Últimas Noticias</a>
+            </li>
+            <li class="nav__ul--items">
+              <a href="contacto.html" class="nav__items--a">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <!-- Hero Section -->
       <div class="hero">
-        <div class="hero__content">
+        <div class="container-seccion hero__content">
           <h1 class="hero__title">Instituto UNTREF</h1>
           <p class="hero__subtitle">
             Más de 50 años formando profesionales e impulsando el futuro educativo con excelencia e innovación.
@@ -52,137 +54,177 @@
     <!-- Contenido Principal -->
     <main class="main">
       <!-- Sección 1: Quiénes Somos / Nosotros -->
-      <section class="main__section main__section-1" id="nosotros">
-        <h2 class="section--h2 section__h2--1024">Quiénes Somos</h2>
-        <a href="#header" class="volver--link" aria-label="Volver arriba">
-          <span class="volver">Volver Arriba</span>
-        </a>
+      <section class="main__section main__section-1 nosotros" id="nosotros">
+        <div class="container-seccion nosotros__container">
+          <h2 class="nosotros__title">Quiénes Somos</h2>
 
-        <img
-          src="img/entrada_colegio.jpg"
-          alt="Fotografía de la fachada de la entrada principal del Instituto UNTREF"
-          class="section--img"
-        />
+          <div class="nosotros__content">
+            <!-- Columna Izquierda: Imagen -->
+            <div class="nosotros__img-column">
+              <img
+                src="img/entrada_colegio.jpg"
+                alt="Fotografía de la fachada de la entrada principal del Instituto UNTREF"
+                class="nosotros__img"
+              />
+            </div>
 
-        <p class="section--p">
-          En el Instituto UNTREF nos dedicamos desde hace más de 50 años a formar integralmente a nuestros estudiantes. <br />
-          <span class="hide--less768">
-            Contamos con un equipo docente altamente capacitado e instalaciones modernas enfocadas en el aprendizaje continuo y en valores comunitarios.
-          </span>
-        </p>
+            <!-- Columna Derecha: Texto -->
+            <div class="nosotros__text-column">
+              <p class="nosotros__text">
+                En el <strong>Instituto UNTREF</strong> nos dedicamos desde hace <strong>más de 50 años</strong> a formar integralmente a nuestros estudiantes, impulsando su crecimiento académico, personal y profesional.
+              </p>
+              <p class="nosotros__text">
+                Contamos con un equipo docente altamente capacitado e instalaciones de vanguardia enfocadas en el aprendizaje continuo, la innovación pedagógica y la formación en valores comunitarios fundamentales para el futuro.
+              </p>
+            </div>
+          </div>
+
+          <!-- Botón Volver Arriba -->
+          <div class="nosotros__footer">
+            <a href="#header" class="nosotros__btn-top" aria-label="Volver arriba">
+              Volver Arriba
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- Sección 2: ¿Por qué elegirnos? -->
-      <section class="main__section main__section-2" id="elegirnos">
-        <h2 class="section--h2">¿Por qué elegirnos?</h2>
-        <a href="#header" class="volver--link link2" aria-label="Volver arriba">
-          <span class="volver">Volver Arriba</span>
-        </a>
-        <article class="section--article">
-          Brindamos educación de excelencia académica combinando tecnología, innovación y valores humanos. <br />
-          <span class="hide--less768">
-            Nuestras propuestas pedagógicas personalizadas garantizan un ambiente seguro y motivador para el crecimiento integral de cada alumno.
-          </span>
-        </article>
+      <section class="main__section main__section-2 elegirnos" id="elegirnos">
+        <div class="container-seccion elegirnos__container">
+          <h2 class="elegirnos__title">¿Por qué elegirnos?</h2>
 
-        <img
-          src="https://aulaintercultural.org/wp-content/uploads/2017/07/ninorubio.jpg"
-          alt="Docente interactuando de manera personalizada con un alumno en el aula"
-          class="section--img section2--img"
-        />
+          <div class="elegirnos__content">
+            <!-- Columna Izquierda: Texto -->
+            <div class="elegirnos__text-column">
+              <p class="elegirnos__text">
+                Brindamos educación de <strong>excelencia académica</strong> combinando tecnología de vanguardia, innovación constante y sólidos valores humanos.
+              </p>
+              <p class="elegirnos__text">
+                Nuestras propuestas pedagógicas personalizadas garantizan un <strong>ambiente seguro, inclusivo y motivador</strong> orientado a impulsar el máximo potencial y crecimiento integral de cada alumno.
+              </p>
+            </div>
+
+            <!-- Columna Derecha: Imagen -->
+            <div class="elegirnos__img-column">
+              <img
+                src="https://aulaintercultural.org/wp-content/uploads/2017/07/ninorubio.jpg"
+                alt="Docente interactuando de manera personalizada con un alumno en el aula"
+                class="elegirnos__img"
+              />
+            </div>
+          </div>
+
+          <!-- Botón Volver Arriba -->
+          <div class="elegirnos__footer">
+            <a href="#header" class="elegirnos__btn-top" aria-label="Volver arriba">
+              Volver Arriba
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- Sección 3: Propuesta Educativa -->
       <section class="main__section main__section-3 propuesta" id="propuesta">
-        <h2 class="section--h2 propuesta__title">Propuesta Educativa</h2>
+        <div class="container-seccion propuesta__container">
+          <h2 class="section--h2 propuesta__title">Propuesta Educativa</h2>
 
-        <div class="propuesta__grid">
-          <!-- Item 1: Cursos de Programación -->
-          <div class="propuesta__card">
-            <div class="propuesta__img-wrapper">
-              <img
-                src="img/curso prog.jpg"
-                alt="Estudiantes en el taller de programación y nuevas tecnologías"
-                class="propuesta__img"
-              />
+          <div class="propuesta__grid">
+            <!-- Item 1: Cursos de Programación -->
+            <div class="propuesta__card">
+              <div class="propuesta__img-wrapper">
+                <img
+                  src="img/curso prog.jpg"
+                  alt="Estudiantes en el taller de programación y nuevas tecnologías"
+                  class="propuesta__img"
+                />
+              </div>
+              <h3 class="propuesta__card-title">Cursos de Programación</h3>
             </div>
-            <h3 class="propuesta__card-title">Cursos de Programación</h3>
+
+            <!-- Item 2: Deportes y Recreación -->
+            <div class="propuesta__card">
+              <div class="propuesta__img-wrapper">
+                <img
+                  src="img/deportes.jpg"
+                  alt="Alumnos realizando actividades deportivas y educación física al aire libre"
+                  class="propuesta__img"
+                />
+              </div>
+              <h3 class="propuesta__card-title">Deportes y Recreación</h3>
+            </div>
+
+            <!-- Item 3: Título Secundario -->
+            <div class="propuesta__card">
+              <div class="propuesta__img-wrapper">
+                <img
+                  src="img/finalizarsec.jpg"
+                  alt="Estudiantes celebrando la finalización del nivel secundario"
+                  class="propuesta__img"
+                />
+              </div>
+              <h3 class="propuesta__card-title">Título Secundario</h3>
+            </div>
+
+            <!-- Item 4: Talleres y Oficios -->
+            <div class="propuesta__card">
+              <div class="propuesta__img-wrapper">
+                <img
+                  src="img/talleres.jpg"
+                  alt="Espacio de talleres prácticos y capacitación de oficios"
+                  class="propuesta__img"
+                />
+              </div>
+              <h3 class="propuesta__card-title">Talleres y Oficios</h3>
+            </div>
           </div>
 
-          <!-- Item 2: Deportes y Recreación -->
-          <div class="propuesta__card">
-            <div class="propuesta__img-wrapper">
-              <img
-                src="img/deportes.jpg"
-                alt="Alumnos realizando actividades deportivas y educación física al aire libre"
-                class="propuesta__img"
-              />
-            </div>
-            <h3 class="propuesta__card-title">Deportes y Recreación</h3>
+          <div class="propuesta__footer">
+            <a href="#header" class="nosotros__btn-top" aria-label="Volver arriba">
+              Volver Arriba
+            </a>
           </div>
-
-          <!-- Item 3: Título Secundario -->
-          <div class="propuesta__card">
-            <div class="propuesta__img-wrapper">
-              <img
-                src="img/finalizarsec.jpg"
-                alt="Estudiantes celebrando la finalización del nivel secundario"
-                class="propuesta__img"
-              />
-            </div>
-            <h3 class="propuesta__card-title">Título Secundario</h3>
-          </div>
-
-          <!-- Item 4: Talleres y Oficios -->
-          <div class="propuesta__card">
-            <div class="propuesta__img-wrapper">
-              <img
-                src="img/talleres.jpg"
-                alt="Espacio de talleres prácticos y capacitación de oficios"
-                class="propuesta__img"
-              />
-            </div>
-            <h3 class="propuesta__card-title">Talleres y Oficios</h3>
-          </div>
-        </div>
-
-        <div class="propuesta__footer">
-          <a href="#header" class="volver--link link3" aria-label="Volver arriba">
-            <span class="volver">Volver Arriba</span>
-          </a>
         </div>
       </section>
 
       <!-- Sección 4: Últimas Noticias -->
-      <section class="main__section main__section-4" id="noticias">
-        <h2 class="section--h2">Últimas Noticias</h2>
-        <a href="#header" class="volver--link link4" aria-label="Volver arriba">
-          <span class="volver volver4" id="volver4">Volver Arriba</span>
-        </a>
-        <div class="section__container section__container-news1">
-          <h3 class="section--h3">Inscripciones Abiertas 2026</h3>
-          <p class="section--p section4--p">
-            Ya se encuentra abierto el período de matriculación para el nuevo ciclo lectivo en todos nuestros niveles educativos.
-          </p>
-          <span class="hide--less768">
-            Acércate a la secretaría institucional o contáctanos para agendar una entrevista informativa.
-          </span>
-        </div>
-        <div class="section__container section__container-news2">
-          <h3 class="section--h3">Nuevos Talleres de Tecnología</h3>
-          <p class="section--p section4--p">
-            Incorporamos talleres extracurriculares de robótica, programación y arte digital para este semestre.
-          </p>
-          <span class="hide--less768">
-            Sumamos equipamiento tecnológico de última generación para enriquecer la experiencia formativa.
-          </span>
+      <section class="main__section main__section-4 noticias" id="noticias">
+        <div class="container-seccion noticias__container">
+          <h2 class="noticias__title">Últimas Noticias</h2>
+
+          <div class="noticias__grid">
+            <article class="noticias__card">
+              <h3 class="noticias__card-title">Inscripciones Abiertas 2026</h3>
+              <p class="noticias__card-desc">
+                Ya se encuentra abierto el período de matriculación para el nuevo ciclo lectivo en todos nuestros niveles educativos.
+              </p>
+              <p class="noticias__card-extra">
+                Acércate a la secretaría institucional o contáctanos para agendar una entrevista informativa.
+              </p>
+            </article>
+
+            <article class="noticias__card">
+              <h3 class="noticias__card-title">Nuevos Talleres de Tecnología</h3>
+              <p class="noticias__card-desc">
+                Incorporamos talleres extracurriculares de robótica, programación y arte digital para este semestre.
+              </p>
+              <p class="noticias__card-extra">
+                Sumamos equipamiento tecnológico de última generación para enriquecer la experiencia formativa.
+              </p>
+            </article>
+          </div>
+
+          <div class="noticias__footer">
+            <a href="#header" class="noticias__btn-top" aria-label="Volver arriba">
+              Volver Arriba
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer Estructurado a 3 Columnas -->
     <footer class="footer">
-      <div class="footer__container">
+      <div class="container-seccion footer__container">
         <!-- Columna Izquierda: Redes Sociales -->
         <div class="footer__col footer__col--social">
           <h3 class="footer__title">Redes Sociales</h3>
@@ -279,9 +321,12 @@
 
       <!-- Pie inferior de derechos reservados -->
       <div class="footer__bottom">
-        <p>&copy; 2026 UNTREF School - Instituto Educativo. Todos los derechos reservados.</p>
+        <div class="container-seccion">
+          <p>&copy; 2026 UNTREF School - Instituto Educativo. Todos los derechos reservados.</p>
+        </div>
       </div>
     </footer>
   </body>
 </html>
+
 

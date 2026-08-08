@@ -218,122 +218,284 @@ nav a {
   cursor: pointer;
 }
 
-/* Edicion general de la etiqueta main */
+/* ==========================================
+   CONTENEDOR UNIFICADO DE SECCIONES
+   ========================================== */
 
-.main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 30vh);
+.container-seccion {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
+
 
 /* Edicion general de cada seccion del main */
 
 .main__section {
-  border-top: 4px solid #181823;
   width: 100%;
-  height: 30vh;
-  text-indent: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 25% 1fr 20%;
-  font-family: "Belanosima", sans-serif;
+  height: auto;
+  min-height: auto;
+  margin: 0;
+  border-radius: 0;
+  box-sizing: border-box;
 }
-/* Editando el contenido de la seccion "Quienes Somos" */
 
-/* Edicion del titulo de la seccion quienes somos */
-.section--h2 {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  margin: auto 0;
-  font-size: 1.4rem;
+/* ==========================================
+   ESTILOS REFACTORIZADOS PARA QUIÉNES SOMOS
+   ========================================== */
+
+.main__section-1.nosotros,
+.quienes-somos {
+  width: 100%;
+  min-height: auto;
+  height: auto;
+  background-color: #181823;
+  color: #eff5f5;
+  padding: 60px 0;
+  border-top: 4px solid #00425a;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
 }
-/* Acomodando el enlace de la primera seccion que lleva al inicio de la pagina */
 
-.volver--link {
-  grid-column: 2/3;
-  grid-row: 3/4;
+.nosotros__container,
+.quienes-somos-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  cursor: pointer;
-  margin-top: 5px;
-  font-family: "Belanosima", sans-serif;
+  text-shadow: none;
+}
+
+.nosotros__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nosotros__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Columna de Imagen */
+.nosotros__img-column {
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+  .nosotros__img-column {
+    height: 380px;
+  }
+}
+
+.nosotros__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.nosotros__img-column:hover .nosotros__img {
+  transform: scale(1.04);
+}
+
+/* Columna de Texto */
+.nosotros__text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.nosotros__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.nosotros__text strong {
+  color: #ffffff;
   font-weight: 600;
 }
 
-/* Editando el span que se encuentra dentro del enlace de la primera seccion  */
-
-.volver {
-  color: #181823;
-  border: 2px dashed #00425a;
-  border-radius: 7px;
-  background-color: #fc7300;
-  padding: 2px;
-}
-/* Edicion de la imagen de la seccion quienes somos */
-.section--img {
-  grid-column: 1/2;
-  grid-row: 2/4;
-  height: 90%;
-  width: 90%;
-  justify-self: center;
-  align-self: center;
-  object-fit: cover;
-  overflow: hidden;
-  border: 2px solid black;
-}
-
-/* Edicion del parrafo de la seccion quienes somos */
-.section--p {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  font-size: 0.8rem;
+/* Botón Volver Arriba */
+.nosotros__footer {
+  margin-top: 40px;
   text-align: center;
-  margin: auto 3px;
-  /* padding: 5px; */
-  overflow: hidden;
-  height: 85%;
+  width: 100%;
+}
+
+.nosotros__btn-top {
+  display: inline-block;
+  padding: 10px 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #eff5f5;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nosotros__btn-top:hover {
+  background-color: #fc7300;
   color: #181823;
+  border-color: #fc7300;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(252, 115, 0, 0.4);
 }
 
-.hide--less768 {
-  display: none;
-}
+/* ==========================================
+   ESTILOS REFACTORIZADOS PARA POR QUÉ ELEGIRNOS
+   ========================================== */
 
-/* Comenzando a editar la seccion "Por que elegirnos" */
-
-/* Editando contenedor de la seccion por que elegirnos */
-.main__section-2 {
+.main__section-2.elegirnos {
+  width: 100%;
+  min-height: auto;
+  height: auto;
   background-color: #181823;
   color: #eff5f5;
+  padding: 60px 0;
+  border-top: 4px solid #1f8a70;
+  display: block;
 }
 
-/* Editando los estilos del article de la seccion */
+.elegirnos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.section--article {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  height: 100%;
-  width: 100%;
-  padding: 2px;
-  margin-bottom: 2px;
-  font-size: 0.9rem;
+.elegirnos__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+.elegirnos__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .elegirnos__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.elegirnos__text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.elegirnos__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.elegirnos__text strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.elegirnos__img-column {
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Editando la imagen de la seccion Por que elegirnos */
-
-.section2--img {
-  grid-column: 2/3;
-  grid-row: 2/4;
+@media screen and (min-width: 768px) {
+  .elegirnos__img-column {
+    height: 380px;
+  }
 }
 
-/* Acomodando el enlace de la segunda seccion que lleva al inicio de la pagina */
-.link2 {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  margin-top: 6px;
+.elegirnos__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.elegirnos__img-column:hover .elegirnos__img {
+  transform: scale(1.04);
+}
+
+.elegirnos__footer {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.elegirnos__btn-top {
+  display: inline-block;
+  padding: 10px 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #eff5f5;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.elegirnos__btn-top:hover {
+  background-color: #fc7300;
+  color: #181823;
+  border-color: #fc7300;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(252, 115, 0, 0.4);
 }
 
 /* Comenzando a modificar los estilos de la seccion Propuesta Educativa */
@@ -460,67 +622,119 @@ nav a {
   text-align: center;
 }
 
-/* Comenzando a modificar la ultima seccion del main (ultimas noticias) */
+/* ==========================================
+   ESTILOS REFACTORIZADOS PARA ÚLTIMAS NOTICIAS
+   ========================================== */
 
-.main__section-4 {
+.main__section-4.noticias {
   width: 100%;
-  background-color: #181823;
+  min-height: auto;
+  height: auto;
+  background-color: #00425a;
   color: #eff5f5;
+  padding: 60px 0;
+  border-top: 4px solid #fc7300;
+  display: block;
 }
 
-.link4 {
-  grid-column: 1/3;
-  grid-row: 3/4;
+.noticias__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#volver4 {
+
+.noticias__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.noticias__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .noticias__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.noticias__card {
+  background-color: rgba(24, 24, 35, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.noticias__card:hover {
+  transform: translateY(-4px);
+  border-color: #1f8a70;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.noticias__card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fc7300;
+  margin: 0;
+}
+
+.noticias__card-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #eff5f5;
+  margin: 0;
+}
+
+.noticias__card-extra {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cde0e0;
+  margin: 0;
+}
+
+.noticias__footer {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.noticias__btn-top {
+  display: inline-block;
+  padding: 10px 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #eff5f5;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.noticias__btn-top:hover {
   background-color: #fc7300;
   color: #181823;
-}
-/* Edicion general del contenedor de la seccion Ultimas noticias */
-
-.section__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20% 80%;
-  justify-content: left;
-  align-items: center;
-}
-
-/* Edicion de lla ubicacion del contenedor de la 1er noticia */
-
-.section__container-news1 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-/* Edicion del titulo de las secciones */
-
-.section--h3 {
-  font-size: 12px;
-  text-align: center;
-  grid-column: 1/3;
-  grid-row: 1/2;
-}
-/* Edicion del parrafo de la seccion Ultimas noticias */
-
-.section4--p {
-  display: inherit;
-  align-items: center;
-  text-align: left;
-  grid-column: 1/3;
-  grid-row: 2/3;
-  font-size: 10px;
-  font-weight: 300;
-  padding: 0 5px;
-  color: #eff5f5;
-  overflow: hidden;
-}
-
-/* Edicion de la 2 noticia de la seccion Ultimas noticias */
-
-.section__container-news2 {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  border-color: #fc7300;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(252, 115, 0, 0.4);
 }
 
 /* ==========================================
@@ -1105,8 +1319,8 @@ footer, .footer {
 
   .main {
     grid-template-rows: auto;
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
   }
 
   /* Edicion de las secciones del main */
@@ -1353,7 +1567,7 @@ footer, .footer {
   }
 
   .section__h2--1024 {
-    text-shadow: #eff5f5 2px 2px 15px;
+    text-shadow: none;
   }
   .map--link {
     grid-column: 2/3;
