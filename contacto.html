@@ -1,70 +1,253 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formulario</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/contactos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta
+      name="description"
+      content="Formulario de Contacto - UNTREF School Instituto Educativo"
+    />
+    <meta name="author" content="Eduardo Incrocci" />
+    <title>Contacto - UNTREF School</title>
   </head>
-  <body class="bg-dark vh-100">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-primary bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="https://untref.edu.ar/" target="_blank"><span class="text-light fw-bold">UNTREF</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#section2">Quienes Somos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#section3">Propuesta Educativa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#section4">Noticias</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <body>
+    <!-- Header y Navegación Principal (Idéntico a index.html) -->
+    <header class="header" id="header">
+      <nav class="header__nav" id="nav--menu" aria-label="Navegación principal">
+        <ul class="header__nav__ul">
+          <li class="nav__ul--items">
+            <a href="index.html#nosotros" class="nav__items--a">Nosotros</a>
+          </li>
+          <li class="nav__ul--items">
+            <a href="index.html#elegirnos" class="nav__items--a">¿Por qué elegirnos?</a>
+          </li>
+          <li class="nav__ul--items">
+            <a href="index.html#propuesta" class="nav__items--a">Propuesta Educativa</a>
+          </li>
+          <li class="nav__ul--items">
+            <a href="index.html#noticias" class="nav__items--a">Últimas Noticias</a>
+          </li>
+          <li class="nav__ul--items">
+            <a href="contacto.html" class="nav__items--a">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero Banner Contacto -->
+      <div class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Contacto Institucional</h1>
+          <p class="hero__subtitle">
+            Estamos a tu disposición para brindarte toda la información sobre admisiones y propuestas educativas.
+          </p>
+        </div>
+      </div>
     </header>
 
-    <main class="container-fluid row">
-      <div class="text-center">
-        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 mx-auto mt-5 p-3">
-      <form action="https://formsubmit.co/edi4518@gmail.com" method="post">
-        <div class="mb-3">
-        <label for="nombre" class="form-label text-light p-2">Nombre y Apellido</label>
-        <input type="nombre" class="form-control p-2 text-center" name="nombre" id="nombre" placeholder="Ingrese su nombre completo" required>
-      </div>
-      <div class="mb-3">
-        <label for="telefono" class="form-label text-light p-2">Telefono</label>
-        <input type="telefono" class="form-control p-2 text-center" name="telefono" id="telefono" placeholder="Ingrese su numero de telefono" required>
-      </div>
-      <div class="mb-3">
-        <label for="correo" class="form-label text-light p-2">Correo electrónico</label>
-        <input type="email" class="form-control p-2 text-center" id="correo" name="correo" placeholder="Ingrese su direccion de correo" required>
-      </div>
-      <div class="mb-3">
-        <label for="area" class="form-label text-light">Observaciones</label>
-        <textarea class="form-control text-center" name="Observaciones" id="area" rows="3" cols="3" placeholder="Ingrese un comentario (Opcional)"></textarea>
-      </div>
-      <div class="mb-3 align-items-center"><button type="submit" class="btn btn-outline-primary btn-enviar">Enviar</button>
-      </div>
-    </form> 
-    </div>
-  </div>
-    </main>
-    <footer class="footer">
-     <div class="container-fluid px-0 contenedor">
-      <p class="text-light text-center bg-primary my-auto contenedor--p ">&copy; 2023 Derechos Reservados - <span class="text-warning fs-5 text-center"><a href="https://untref.edu.ar/" target="_blank" class="text-warning text-decoration-none">UNTREF</a</span></p>
-     </div>
+    <!-- Contenido Principal: Formulario de Contacto Accesible -->
+    <main class="contact-section">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2 class="contact-header__title">Envíanos tu Consulta</h2>
+          <p class="contact-header__desc">
+            Completa el siguiente formulario y nuestro equipo de admisiones responderá a la brevedad.
+          </p>
+        </div>
 
+        <form
+          action="https://formsubmit.co/edi4518@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Campo: Nombre y Apellido -->
+          <div class="form__group">
+            <label for="nombre" class="form__label">
+              Nombre y Apellido <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="form__input"
+              placeholder="Ej. María González"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <!-- Campo: Correo Electrónico -->
+          <div class="form__group">
+            <label for="email" class="form__label">
+              Correo Electrónico <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__input"
+              placeholder="ejemplo@correo.com"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <!-- Campo: Teléfono -->
+          <div class="form__group">
+            <label for="telefono" class="form__label">
+              Teléfono <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              class="form__input"
+              placeholder="+54 9 11 1234-5678"
+              required
+              autocomplete="tel"
+            />
+          </div>
+
+          <!-- Campo: Asunto -->
+          <div class="form__group">
+            <label for="asunto" class="form__label">
+              Asunto <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              class="form__input"
+              placeholder="Motivo de la consulta (Ej. Admisiones 2026)"
+              required
+            />
+          </div>
+
+          <!-- Campo: Mensaje -->
+          <div class="form__group">
+            <label for="mensaje" class="form__label">
+              Mensaje <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              class="form__textarea"
+              rows="5"
+              placeholder="Escriba aquí su consulta o mensaje detallado..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Botón de Envío -->
+          <div class="form__group form__group--submit">
+            <button type="submit" class="form__button">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer Estructurado a 3 Columnas (Idéntico a index.html) -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Columna Izquierda: Redes Sociales -->
+        <div class="footer__col footer__col--social">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <ul class="footer__social-list">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <img
+                  src="img/instagram.png"
+                  alt="Icono de la red social Instagram"
+                  class="footer__icon"
+                />
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <img
+                  src="img/facebook.png"
+                  alt="Icono de la red social Facebook"
+                  class="footer__icon"
+                />
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/+54911987654332"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <img
+                  src="img/whatsapp.png"
+                  alt="Icono de contacto por WhatsApp"
+                  class="footer__icon"
+                />
+                <span>WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna Central: Nombre de la Institución -->
+        <div class="footer__col footer__col--brand">
+          <h2 class="footer__brand-title">UNTREF School</h2>
+          <p class="footer__brand-subtitle">Instituto Educativo</p>
+          <p class="footer__brand-desc">
+            Formación académica integral, valores comunitarios e innovación pedagógica.
+          </p>
+        </div>
+
+        <!-- Columna Derecha: Información de Contacto Rápido -->
+        <div class="footer__col footer__col--contact">
+          <h3 class="footer__title">Contacto Rápido</h3>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item">
+              <span class="footer__contact-text">
+                📍 <strong>Dirección:</strong> Sede UNTREF, Calle Suipacha 350, CABA
+              </span>
+            </li>
+            <li class="footer__contact-item">
+              <a href="tel:+54911987654332" class="footer__contact-link">
+                <img
+                  src="img/llamada-telefonica.png"
+                  alt="Icono de teléfono de atención"
+                  class="footer__icon"
+                />
+                <span><strong>Teléfono:</strong> +54 9 11 9876-5432</span>
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <a href="mailto:colegio@gmail.com" class="footer__contact-link">
+                <img
+                  src="img/gmail.png"
+                  alt="Icono de correo electrónico institucional"
+                  class="footer__icon"
+                />
+                <span><strong>Correo:</strong> colegio@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pie inferior de derechos reservados -->
+      <div class="footer__bottom">
+        <p>&copy; 2026 UNTREF School - Instituto Educativo. Todos los derechos reservados.</p>
+      </div>
     </footer>
+  </body>
 </html>
+

@@ -6,190 +6,282 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta
       name="description"
-      content="Escuela Primaria UNTREF desde ahace 50 años educando al futuro"
+      content="Instituto Educativo UNTREF School - Más de 50 años educando para el futuro."
     />
     <meta name="author" content="Eduardo Incrocci" />
-    <title>Instituto UNTREF</title>
+    <title>UNTREF School - Instituto Educativo</title>
   </head>
   <body>
+    <!-- Header y Navegación Principal -->
     <header class="header" id="header">
-      <nav class="header__nav" id="nav--menu">
+      <nav class="header__nav" id="nav--menu" aria-label="Navegación principal">
         <ul class="header__nav__ul">
           <li class="nav__ul--items">
-            <a href="#section1" class="nav__items--a">Nosotros</a>
+            <a href="#nosotros" class="nav__items--a">Nosotros</a>
           </li>
           <li class="nav__ul--items">
-            <a href="#section2" class="nav__items--a">¿Por que elegirnos?</a>
+            <a href="#elegirnos" class="nav__items--a">¿Por qué elegirnos?</a>
           </li>
           <li class="nav__ul--items">
-            <a href="#section3" class="nav__items--a">Propuesta Educativa</a>
+            <a href="#propuesta" class="nav__items--a">Propuesta Educativa</a>
           </li>
           <li class="nav__ul--items">
-            <a href="#section4" class="nav__items--a">Ultimas Noticias</a>
+            <a href="#noticias" class="nav__items--a">Últimas Noticias</a>
           </li>
           <li class="nav__ul--items">
-            <a href="contacto.html" class="nav__items--a">Contactanos</a>
+            <a href="contacto.html" class="nav__items--a">Contáctanos</a>
           </li>
         </ul>
       </nav>
 
-      <div class="container--h1">
-        <h1 class="header--h1" id="header--h1">Instituto UNTREF</h1>
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Instituto UNTREF</h1>
+          <p class="hero__subtitle">
+            Más de 50 años formando profesionales e impulsando el futuro educativo con excelencia e innovación.
+          </p>
+          <div class="hero__buttons">
+            <a href="#propuesta" class="hero__btn hero__btn--primary">Ver Carreras</a>
+            <a href="contacto.html" class="hero__btn hero__btn--secondary">Contactar</a>
+          </div>
+        </div>
       </div>
     </header>
+
+    <!-- Contenido Principal -->
     <main class="main">
-      <section class="main__section main__section-1" id="section1">
-        <h2 class="section--h2 section__h2--1024">Quienes Somos</h2>
-        <a href="#header" class="volver--link"
-          ><span class="volver">Volver Arriba</span></a
-        >
+      <!-- Sección 1: Quiénes Somos / Nosotros -->
+      <section class="main__section main__section-1" id="nosotros">
+        <h2 class="section--h2 section__h2--1024">Quiénes Somos</h2>
+        <a href="#header" class="volver--link" aria-label="Volver arriba">
+          <span class="volver">Volver Arriba</span>
+        </a>
 
         <img
           src="img/entrada_colegio.jpg"
-          alt="Entrada de la institucion"
+          alt="Fotografía de la fachada de la entrada principal del Instituto UNTREF"
           class="section--img"
         />
 
         <p class="section--p">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque,
-          ratione. <br />
-          <span class="hide--less768"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-            temporibus?</span
-          >
+          En el Instituto UNTREF nos dedicamos desde hace más de 50 años a formar integralmente a nuestros estudiantes. <br />
+          <span class="hide--less768">
+            Contamos con un equipo docente altamente capacitado e instalaciones modernas enfocadas en el aprendizaje continuo y en valores comunitarios.
+          </span>
         </p>
       </section>
-      <section class="main__section main__section-2" id="section2">
-        <h2 class="section--h2">¿Por que elegirnos?</h2>
-        <a href="#header" class="volver--link link2"
-          ><span class="volver">Volver Arriba</span></a
-        >
+
+      <!-- Sección 2: ¿Por qué elegirnos? -->
+      <section class="main__section main__section-2" id="elegirnos">
+        <h2 class="section--h2">¿Por qué elegirnos?</h2>
+        <a href="#header" class="volver--link link2" aria-label="Volver arriba">
+          <span class="volver">Volver Arriba</span>
+        </a>
         <article class="section--article">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, suscipit
-          aliquid animi provident <br />
-          <span class="hide--less768"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-            temporibus?</span
-          >
+          Brindamos educación de excelencia académica combinando tecnología, innovación y valores humanos. <br />
+          <span class="hide--less768">
+            Nuestras propuestas pedagógicas personalizadas garantizan un ambiente seguro y motivador para el crecimiento integral de cada alumno.
+          </span>
         </article>
 
         <img
           src="https://aulaintercultural.org/wp-content/uploads/2017/07/ninorubio.jpg"
-          alt="Profesora en clase"
+          alt="Docente interactuando de manera personalizada con un alumno en el aula"
           class="section--img section2--img"
         />
       </section>
-      <section class="main__section main__section-3" id="section3">
-        <h2 class="section--h2 section__h2--1024">Propuesta Educativa</h2>
-        <a href="#header" class="volver--link link3"
-          ><span class="volver">Volver Arriba</span></a
-        >
-        <div class="main__section3__container--img">
-          <img
-            src="img/curso prog.jpg"
-            alt="Cursos y capacitaciones"
-            class="main__section3--img img1"
-          />
-          <img
-            src="img/deportes.jpg"
-            alt="practicar deportes"
-            class="main__section3--img img2"
-          />
-          <img
-            src="img/finalizarsec.jpg"
-            alt="fomentar la finalizacion del secundario"
-            class="main__section3--img img3"
-          />
-          <img
-            src="img/talleres.jpg"
-            alt="amplia variedad de talleres u oficios"
-            class="main__section3--img img4"
-          />
+
+      <!-- Sección 3: Propuesta Educativa -->
+      <section class="main__section main__section-3 propuesta" id="propuesta">
+        <h2 class="section--h2 propuesta__title">Propuesta Educativa</h2>
+
+        <div class="propuesta__grid">
+          <!-- Item 1: Cursos de Programación -->
+          <div class="propuesta__card">
+            <div class="propuesta__img-wrapper">
+              <img
+                src="img/curso prog.jpg"
+                alt="Estudiantes en el taller de programación y nuevas tecnologías"
+                class="propuesta__img"
+              />
+            </div>
+            <h3 class="propuesta__card-title">Cursos de Programación</h3>
+          </div>
+
+          <!-- Item 2: Deportes y Recreación -->
+          <div class="propuesta__card">
+            <div class="propuesta__img-wrapper">
+              <img
+                src="img/deportes.jpg"
+                alt="Alumnos realizando actividades deportivas y educación física al aire libre"
+                class="propuesta__img"
+              />
+            </div>
+            <h3 class="propuesta__card-title">Deportes y Recreación</h3>
+          </div>
+
+          <!-- Item 3: Título Secundario -->
+          <div class="propuesta__card">
+            <div class="propuesta__img-wrapper">
+              <img
+                src="img/finalizarsec.jpg"
+                alt="Estudiantes celebrando la finalización del nivel secundario"
+                class="propuesta__img"
+              />
+            </div>
+            <h3 class="propuesta__card-title">Título Secundario</h3>
+          </div>
+
+          <!-- Item 4: Talleres y Oficios -->
+          <div class="propuesta__card">
+            <div class="propuesta__img-wrapper">
+              <img
+                src="img/talleres.jpg"
+                alt="Espacio de talleres prácticos y capacitación de oficios"
+                class="propuesta__img"
+              />
+            </div>
+            <h3 class="propuesta__card-title">Talleres y Oficios</h3>
+          </div>
+        </div>
+
+        <div class="propuesta__footer">
+          <a href="#header" class="volver--link link3" aria-label="Volver arriba">
+            <span class="volver">Volver Arriba</span>
+          </a>
         </div>
       </section>
-      <section class="main__section main__section-4" id="section4">
+
+      <!-- Sección 4: Últimas Noticias -->
+      <section class="main__section main__section-4" id="noticias">
         <h2 class="section--h2">Últimas Noticias</h2>
-        <a href="#header" class="volver--link link4"
-          ><span class="volver volver4" id="volver4">Volver Arriba</span></a
-        >
+        <a href="#header" class="volver--link link4" aria-label="Volver arriba">
+          <span class="volver volver4" id="volver4">Volver Arriba</span>
+        </a>
         <div class="section__container section__container-news1">
-          <h3 class="section--h3">Lorem, ipsum</h3>
+          <h3 class="section--h3">Inscripciones Abiertas 2026</h3>
           <p class="section--p section4--p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            voluptatem numquam et.
+            Ya se encuentra abierto el período de matriculación para el nuevo ciclo lectivo en todos nuestros niveles educativos.
           </p>
           <span class="hide--less768">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et.</span
-          >
+            Acércate a la secretaría institucional o contáctanos para agendar una entrevista informativa.
+          </span>
         </div>
         <div class="section__container section__container-news2">
-          <h3 class="section--h3">Lorem ipsum dolor sit amet.</h3>
+          <h3 class="section--h3">Nuevos Talleres de Tecnología</h3>
           <p class="section--p section4--p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ullam
-            mollitia accusantium exercitationem
+            Incorporamos talleres extracurriculares de robótica, programación y arte digital para este semestre.
           </p>
           <span class="hide--less768">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et.</span
-          >
+            Sumamos equipamiento tecnológico de última generación para enriquecer la experiencia formativa.
+          </span>
         </div>
       </section>
     </main>
 
-    <footer>
-      <h3 class="social--h3">Redes Sociales</h3>
-      <a href="https://www.facebook.com/" target="_blank" class="redes--link redes--link1">
-        <img
-          src="img/facebook.png"
-          alt="Imagen logo Facebook"
-          class="redes--img redes--img1"
-        /> 
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" class="redes--link redes--link2">
-        <img
-          src="img/instagram.png"
-          alt="Imagen logo Instagram"
-          class="redes--img redes--img2"
-        />
-      </a>
-      <a href="https://www.youtube.com/" target="_blank" class="redes--link redes--link3">
-        <img
-          src="img/youtube.png"
-          alt="Imagen logo YouTube"
-          class="redes--img redes--img3"
-        />
-      </a>
+    <!-- Footer Estructurado a 3 Columnas -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Columna Izquierda: Redes Sociales -->
+        <div class="footer__col footer__col--social">
+          <h3 class="footer__title">Redes Sociales</h3>
+          <ul class="footer__social-list">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <img
+                  src="img/instagram.png"
+                  alt="Icono de la red social Instagram"
+                  class="footer__icon"
+                />
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <img
+                  src="img/facebook.png"
+                  alt="Icono de la red social Facebook"
+                  class="footer__icon"
+                />
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/+54911987654332"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <img
+                  src="img/whatsapp.png"
+                  alt="Icono de contacto por WhatsApp"
+                  class="footer__icon"
+                />
+                <span>WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <h3 class="map--h3">Ubicacion</h3>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2703285471607!2d-58.38226552477186!3d-34.5973251571597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9d19a2d47%3A0x69effc677598ede2!2sSede%20UNTREF%20calle%20Suipacha!5e0!3m2!1ses-419!2sar!4v1690649439100!5m2!1ses-419!2sar"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="map--link"
-      ></iframe>
+        <!-- Columna Central: Nombre de la Institución -->
+        <div class="footer__col footer__col--brand">
+          <h2 class="footer__brand-title">UNTREF School</h2>
+          <p class="footer__brand-subtitle">Instituto Educativo</p>
+          <p class="footer__brand-desc">
+            Formación académica integral, valores comunitarios e innovación pedagógica.
+          </p>
+        </div>
 
-      <h3 class="contact--h3" id="contact">Contacto</h3>
-      <a href="mailto:colegio@gmail.com" class="contact--links email--link"
-        ><img
-          src="img/gmail.png"
-          alt=""
-          class="contact--img email--img"
-        /></a
-      >
-      <a href="tel:+54911987654332" class="contact--links tel--link"
-        ><img
-          src="img/llamada-telefonica.png"
-          alt=""
-          class="contact--img tel--img"
-      /></a>
-      <a href="https://wa.me/+54911987654332" class="contact--links wa--link"
-        ><img
-          src="img/whatsapp.png"
-          alt=""
-          class="contact--img wa--img"
-        /></a
-      >
+        <!-- Columna Derecha: Información de Contacto Rápido -->
+        <div class="footer__col footer__col--contact">
+          <h3 class="footer__title">Contacto Rápido</h3>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item">
+              <span class="footer__contact-text">
+                📍 <strong>Dirección:</strong> Sede UNTREF, Calle Suipacha 350, CABA
+              </span>
+            </li>
+            <li class="footer__contact-item">
+              <a href="tel:+54911987654332" class="footer__contact-link">
+                <img
+                  src="img/llamada-telefonica.png"
+                  alt="Icono de teléfono de atención"
+                  class="footer__icon"
+                />
+                <span><strong>Teléfono:</strong> +54 9 11 9876-5432</span>
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <a href="mailto:colegio@gmail.com" class="footer__contact-link">
+                <img
+                  src="img/gmail.png"
+                  alt="Icono de correo electrónico institucional"
+                  class="footer__icon"
+                />
+                <span><strong>Correo:</strong> colegio@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pie inferior de derechos reservados -->
+      <div class="footer__bottom">
+        <p>&copy; 2026 UNTREF School - Instituto Educativo. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
+
