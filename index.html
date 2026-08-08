@@ -12,44 +12,51 @@
     <title>UNTREF School - Instituto Educativo</title>
   </head>
   <body>
-    <!-- Header y Navegación Principal -->
-    <header class="header" id="header">
-      <nav class="header__nav" id="nav--menu" aria-label="Navegación principal">
-        <div class="container-seccion">
-          <ul class="header__nav__ul">
-            <li class="nav__ul--items">
-              <a href="#nosotros" class="nav__items--a">Nosotros</a>
+    <!-- Header Navegación Principal Sticky -->
+    <header class="main-header" id="header">
+      <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container-seccion nav-container">
+          <!-- Logo / Marca -->
+          <a href="index.html" class="nav-logo">
+            <span class="nav-logo__brand">UNTREF</span>
+            <span class="nav-logo__sub">School</span>
+          </a>
+
+          <!-- Enlaces de Navegación -->
+          <ul class="nav-links">
+            <li>
+              <a href="#nosotros" class="nav-link">Nosotros</a>
             </li>
-            <li class="nav__ul--items">
-              <a href="#elegirnos" class="nav__items--a">¿Por qué elegirnos?</a>
+            <li>
+              <a href="#elegirnos" class="nav-link">¿Por qué elegirnos?</a>
             </li>
-            <li class="nav__ul--items">
-              <a href="#propuesta" class="nav__items--a">Propuesta Educativa</a>
+            <li>
+              <a href="#propuesta" class="nav-link">Propuesta Educativa</a>
             </li>
-            <li class="nav__ul--items">
-              <a href="#noticias" class="nav__items--a">Últimas Noticias</a>
+            <li>
+              <a href="#noticias" class="nav-link">Últimas Noticias</a>
             </li>
-            <li class="nav__ul--items">
-              <a href="contacto.html" class="nav__items--a">Contáctanos</a>
+            <li>
+              <a href="contacto.html" class="nav-btn-contact">Contáctanos</a>
             </li>
           </ul>
         </div>
       </nav>
+    </header>
 
-      <!-- Hero Section -->
-      <div class="hero">
-        <div class="container-seccion hero__content">
-          <h1 class="hero__title">Instituto UNTREF</h1>
-          <p class="hero__subtitle">
-            Más de 50 años formando profesionales e impulsando el futuro educativo con excelencia e innovación.
-          </p>
-          <div class="hero__buttons">
-            <a href="#propuesta" class="hero__btn hero__btn--primary">Ver Carreras</a>
-            <a href="contacto.html" class="hero__btn hero__btn--secondary">Contactar</a>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container-seccion hero__content">
+        <h1 class="hero__title">Instituto UNTREF</h1>
+        <p class="hero__subtitle">
+          Más de 50 años formando profesionales e impulsando el futuro educativo con excelencia e innovación.
+        </p>
+        <div class="hero__buttons">
+          <a href="#propuesta" class="hero__btn hero__btn--primary">Ver Carreras</a>
+          <a href="contacto.html" class="hero__btn hero__btn--secondary">Contactar</a>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- Contenido Principal -->
     <main class="main">
